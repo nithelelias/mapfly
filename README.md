@@ -10,7 +10,7 @@ The game is built with a lightweight web stack and focuses on interactive map-ba
 🚀 Live Demo
 
 👉 Play the game:
-https://mapfly.vercel.app
+https://mapfly-game.vercel.app/
 
 ## PREVIEW
 ![MapFly gameplay](./.images/airplane.gif)
