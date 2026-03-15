@@ -5,8 +5,10 @@ import RequestCountries, { requestCities, getCountries, type TCity, type TCountr
 import PlayerStatsUI from './src/playerStatsUI.ts'
 import selectStartCountryView from './src/selectStartCountry.ts'
 import drawFlyPlants from './src/drawFlyPlants.ts'
+/* 
 import { MOCK_FLYPLAN } from './src/mocks.ts'
-import awaitTime from './src/awaitTime.ts'
+import awaitTime from './src/awaitTime.ts' 
+*/
 import CloudLayer from './src/cloudLayer.ts'
 import SoundManager from './src/soundManager.ts'
 const appElement = document.querySelector<HTMLDivElement>('#app')!

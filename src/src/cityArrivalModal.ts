@@ -110,7 +110,7 @@ export default class CityArrivalModal {
         fuelrange.addEventListener('input', () => {
             btnBuyFuel.innerText = `Poner ${fuelrange.value}L ($${Number(fuelrange.value) * EconomySystem.fuelPricePerLiter})`;
         });
-        btnBuyFuel.addEventListener('click', (e) => {
+        btnBuyFuel.addEventListener('click', () => {
 
             const amount = Number(fuelrange.value);
 
