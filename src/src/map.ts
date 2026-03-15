@@ -44,7 +44,7 @@ export function MapController(element: HTMLElement, map: L.Map) {
   }).addTo(map);
 
   new ZoomControls(element, map, minZoom, maxZoom)
-  const helpInfoWindow = new HelpInfoWindow(element)
+  new HelpInfoWindow(element)
   const flyPlan = new FlyPlanManager(center)
   const airplane = new Airplane(center as L.LatLngExpression, map)
   const velocimeter = new Velocimeter(element, GameState.stats.maxSpeed)

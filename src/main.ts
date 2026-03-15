@@ -126,7 +126,7 @@ async function runFlyPlanSelection(country: TCountry, startCity: TCity) {
 
 }
 
-async function startMock() {
+/* async function startMock() {
   const plan = MOCK_FLYPLAN.cities
   const startCity = plan[0]
   mapController.setCenter(startCity.latlng)
@@ -137,7 +137,7 @@ async function startMock() {
   if (completed) {
     runFlyPlanSelection(obtainCityOfCountry(lastCity.countryCode)!, lastCity)
   }
-}
+} */
 async function start() {
   const country = await selectStarCountry()
   const startCity = await getRandomCity(country)
