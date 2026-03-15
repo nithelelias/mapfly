@@ -8,6 +8,7 @@ import drawFlyPlants from './src/drawFlyPlants.ts'
 import { MOCK_FLYPLAN } from './src/mocks.ts'
 import awaitTime from './src/awaitTime.ts'
 import CloudLayer from './src/cloudLayer.ts'
+import SoundManager from './src/soundManager.ts'
 const appElement = document.querySelector<HTMLDivElement>('#app')!
 appElement.innerHTML = `
 <div id="map"></div>
@@ -23,6 +24,8 @@ const clouds = new CloudLayer('#clouds', {
   count: random(1, 100),        // cantidad de nubes
   opacity: 1,   // opacidad global 0-1
 });
+const sfx = new SoundManager(0.8); // master en 0.8
+
 
 
 clouds.start();
@@ -142,6 +145,15 @@ async function start() {
   runFlyPlanSelection(country, startCity)
 
 }
+async function preloadSounds() {
+  await sfx.load('sfx-chime', '/sfx-airplane-chime.mp3');
+  await sfx.load('sfx-airplane', '/sfx-airplane-sound2.mp3');
+
+
+}
 RequestCountries().then(() => {
+  return preloadSounds()
+
+}).then(() => {
   start()
 }) 

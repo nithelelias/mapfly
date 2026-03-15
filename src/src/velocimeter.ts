@@ -1,12 +1,15 @@
+import mapSpeedToKmH from "./mapSpeedToKm";
+
 export default class Velocimeter {
     private container: HTMLElement;
     private maxVelocity: number;
     private needleElement: HTMLElement;
     private textElement: HTMLElement;
+    private maxSpeedKm = 0
 
     constructor(parent: HTMLElement, maxVelocity: number) {
         this.maxVelocity = maxVelocity;
-
+        this.maxSpeedKm = mapSpeedToKmH(maxVelocity)
         // Contenedor principal
         this.container = document.createElement('div');
         this.container.classList.add('ui-velocimeter');
@@ -52,6 +55,7 @@ export default class Velocimeter {
         this.needleElement.style.transform = `rotate(${angle}deg)`;
 
         // Mostrar valor relativo a porcentaje (o bien podrías mostrar el valor absoluto interpolado)
-        this.textElement.innerText = Math.round(percentage * 100).toString();
+        const speedPercentage = Math.round((percentage) * this.maxSpeedKm)
+        this.textElement.innerText = speedPercentage.toString() + "km";
     }
 }

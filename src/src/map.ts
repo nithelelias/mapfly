@@ -22,6 +22,8 @@ import { getDistanceKm } from './getDistances';
 import calcRwewardPerKmDistance from './calcRewardPerKmDistance';
 import awaitTime from './awaitTime';
 import ConfirmMessage from './confirmMessage';
+import SoundManager from './soundManager';
+import HelpInfoWindow from './helpInfoWindow';
 
 const minZoom = 2
 const maxZoom = 20
@@ -33,7 +35,7 @@ export function MapController(element: HTMLElement, map: L.Map) {
 
   let onFlyPlanComplete: (props: { completed: boolean, lastCity: TCity }) => void = () => { }
   const center: number[] = [map.getCenter().lat, map.getCenter().lng]
-
+  const landingSpeed = GameState.stats.maxSpeed * .03
   const nextCityMarker = L.circle(center as L.LatLngExpression, {
     color: 'red',
     fillColor: '#f03',
@@ -42,6 +44,7 @@ export function MapController(element: HTMLElement, map: L.Map) {
   }).addTo(map);
 
   new ZoomControls(element, map, minZoom, maxZoom)
+  const helpInfoWindow = new HelpInfoWindow(element)
   const flyPlan = new FlyPlanManager(center)
   const airplane = new Airplane(center as L.LatLngExpression, map)
   const velocimeter = new Velocimeter(element, GameState.stats.maxSpeed)
@@ -62,14 +65,21 @@ export function MapController(element: HTMLElement, map: L.Map) {
     GameState.fuel -= GameState.stats.consumptionPerKm;
     if (GameState.fuel < 0) GameState.fuel = 0;
   })
-
+  let hasBeenNotifiedMaxSpeed = false
   flyPlan.onReachCity(() => {
 
     if (waiting) return
-    if (airplaneCtrl.currentSpeed > 3) {
-      notifiyUserMaxSpeed()
+    if (airplaneCtrl.currentSpeed > landingSpeed) {
+      if (!hasBeenNotifiedMaxSpeed) {
+        hasBeenNotifiedMaxSpeed = true
+        notifiyUserMaxSpeed().then(() => {
+          hasBeenNotifiedMaxSpeed = false
+        })
+      }
+
       return
     }
+
     map.removeLayer(nextCityMarker)
     completes++
     paused = true
@@ -79,9 +89,12 @@ export function MapController(element: HTMLElement, map: L.Map) {
     map.dragging.disable();
     map.scrollWheelZoom.disable();
     map.doubleClickZoom.disable();
-
+    if (SoundManager.getCurrent().isPlaying('sfx-airplane')) {
+      SoundManager.getCurrent().fadeOut('sfx-airplane', 1, true);
+    }
     // Stop the airplane immediately
     airplaneCtrl.currentSpeed = 0;
+    SoundManager.getCurrent().play('sfx-chime');
 
     const starting = completes === 1
     // Show the new interaction modal instead of automatic timeout
@@ -137,10 +150,23 @@ export function MapController(element: HTMLElement, map: L.Map) {
       onFlyPlanComplete({ completed: false, lastCity: flyPlan.getCurrentCity() })
     }
   }
+  const updateSounds = () => {
+    const sfx = SoundManager.getCurrent();
+    if (airplaneCtrl.currentSpeed > 0) {
+      if (!sfx.isPlaying('sfx-airplane')) {
+        sfx.play('sfx-airplane', { loop: true });
+        sfx.fadeIn('sfx-airplane', 1, 3);
+      }
+    } else {
+      if (sfx.isPlaying('sfx-airplane')) {
+        sfx.fadeOut('sfx-airplane', 1, true);
+      }
+    }
+  }
   onEnterFrame(() => {
     playerStatsUI.update()
     if (paused) return
-
+    updateSounds()
     // Utilizamos la física extraída
     // @ts-ignore Si moveCursor tipado requiere cursor
     const cursorY = moveCursor.cursor ? moveCursor.cursor.y : 0;
@@ -193,7 +219,14 @@ export function createMap(element: HTMLElement, center: number[]) {
   return map
 }
 function notifiyUserMaxSpeed() {
-  NotificationsManager.notify("Max Speed", "You are going too fast")
+
+  return new Promise<void>((resolve) => {
+    const unbind = NotificationsManager.notify("Max Speed", "You are going too fast")
+    setTimeout(() => {
+      unbind()
+      resolve()
+    }, 2000)
+  })
 }
 
 class PlanRewards {

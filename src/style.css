@@ -1,5 +1,7 @@
 :root {
     /* UI Colors */
+
+    --ui-font: "Datatype", sans-serif;
     --ui-bg-primary: rgba(0, 0, 0, 0.85);
     --ui-bg-secondary: rgba(0, 0, 0, 0.7);
     --ui-bg-panel: rgba(28, 28, 28, 0.8);
@@ -21,6 +23,8 @@
 body {
     margin: 0;
     background-color: #111;
+    font-family: var(--ui-font);
+
 }
 
 #app {
@@ -60,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-size: 18px;
 }
 
@@ -98,7 +102,7 @@ body {
     color: var(--ui-text-primary);
     padding: 12px 24px;
     border-radius: 30px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-size: 18px;
     font-weight: bold;
     display: flex;
@@ -142,7 +146,7 @@ body {
     border-radius: 4px 8px 8px 4px;
     min-width: 250px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -220,7 +224,7 @@ body {
     bottom: 20px;
     left: 40px;
     color: var(--ui-text-muted);
-    font-family: monospace;
+    font-family: var(--ui-font);
     font-size: 2.2em;
     font-weight: bold;
 }
@@ -280,7 +284,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-size: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -327,7 +331,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     width: 400px;
     max-width: 90%;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     text-align: center;
 }
 
@@ -372,7 +376,7 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 6px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
@@ -424,7 +428,7 @@ body {
     color: var(--ui-text-primary);
     padding: 10px;
     border-radius: 6px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-size: 16px;
     width: 100px;
     text-align: center;
@@ -449,7 +453,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     width: 400px;
     max-width: 90%;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     text-align: center;
     z-index: 1000;
 }
@@ -479,7 +483,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     width: 400px;
     max-width: 90%;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     text-align: center;
     z-index: 1000;
 }
@@ -502,7 +506,7 @@ body {
     left: 20px;
 
     max-width: 400px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     text-align: center;
     z-index: 1000;
 }
@@ -524,7 +528,7 @@ body {
     gap: 10px;
 
     border-radius: 6px;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
@@ -580,7 +584,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     font-size: 16px;
     color: var(--ui-text-primary);
     background-color: var(--ui-bg-panel);
@@ -605,7 +609,26 @@ dialog {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     width: 400px;
     max-width: 90%;
-    font-family: monospace, sans-serif;
+    font-family: var(--ui-font);
     text-align: center;
     z-index: 1000;
+}
+
+.ui-help-info-window-content {
+    background-color: var(--ui-bg-panel);
+    color: var(--ui-text-primary);
+    padding: 5px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    max-width: 90%;
+    font-family: var(--ui-font);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
