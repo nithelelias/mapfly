@@ -27,8 +27,7 @@ Every route is a strategic decision between **distance, fuel cost, and reward**.
 
 * Interactive world map
 * City-to-city flight routes
-* Route distance calculation
-* Reward system for completed flights
+* Route distance calculation 
 * Route selection with visual highlighting
 * Simple flight planning interface
 
@@ -40,6 +39,7 @@ Every route is a strategic decision between **distance, fuel cost, and reward**.
 * **TypeScript** – typed JavaScript
 * **Leaflet** – interactive maps
 * **OpenStreetMap** – map data
+* **geonames** – api for city data.
 
 ---
 
@@ -74,9 +74,12 @@ npm run build
 
 ## 🚀 Future Ideas
  
+* Improving Visual feedbacks.
 * Weather effects
 * Aircraft upgrades
 * Global leaderboard
+* Buy new aircrafts (better speed and fuel consumption)
+* maybe go to mars?
 
 ---
 
