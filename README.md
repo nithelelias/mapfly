@@ -6,9 +6,16 @@ Choose destinations, plan routes between cities, manage fuel, and take off to co
 The game is built with a lightweight web stack and focuses on interactive map-based gameplay.
 
 ---
+
+🚀 Live Demo
+
+👉 Play the game:
+https://mapfly.vercel.app
+
 ## PREVIEW
 ![MapFly gameplay](./.images/airplane.gif)
 
+ 
 ## 🕹️ Gameplay
 
 In MapFly you:
