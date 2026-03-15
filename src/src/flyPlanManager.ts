@@ -1,13 +1,17 @@
+import getDistances from "./getDistances";
 import type { TCity } from "./requestCountries";
 
 export default class FlyPlanManager {
     position: number[];
-    cities: TCity[];
+    cities: TCity[] = [];
     index = 0
     __onReachCity = () => { }
-    constructor(cities: TCity[], position: number[]) {
-        this.cities = cities
+    constructor(position: number[]) {
         this.position = position
+    }
+    setCities(cities: TCity[]) {
+        this.cities = cities
+        this.index = 0
     }
     getLastCity() {
         return this.cities[this.index - 1]
@@ -15,9 +19,12 @@ export default class FlyPlanManager {
     getCurrentCity() {
         return this.cities[this.index]
     }
+    getNextCity() {
+        return this.index < this.cities.length - 1 ? this.cities[this.index + 1] : null
+    }
     getCurrentNextCityDistance() {
         const nextCity = this.getCurrentCity()
-        const distance = Math.sqrt(Math.pow(nextCity.latlng[0] - this.position[0], 2) + Math.pow(nextCity.latlng[1] - this.position[1], 2))
+        const distance = getDistances(nextCity.latlng, this.position)  //Math.sqrt(Math.pow(nextCity.latlng[0] - this.position[0], 2) + Math.pow(nextCity.latlng[1] - this.position[1], 2))
         return distance
     }
     goNextCity() {

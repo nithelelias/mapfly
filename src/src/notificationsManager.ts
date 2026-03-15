@@ -11,11 +11,12 @@ export default class NotificationsManager {
         return this.container;
     }
 
-    static notify(title: string, message: string) {
+    static notify(title: string, message: string, type: 'info' | 'error' | 'success' = 'info') {
         const container = this.getContainer();
-        
+
         const notif = document.createElement('div');
         notif.classList.add('ui-notification');
+        notif.classList.add(`ui-notification-${type}`);
 
         const titleEl = document.createElement('div');
         titleEl.innerText = title;
@@ -27,7 +28,7 @@ export default class NotificationsManager {
 
         notif.appendChild(titleEl);
         notif.appendChild(msgEl);
-        
+
         // Al usar flex-direction: column y estar anclado abajo (bottom: 20px),
         // anexar los elementos al final (appendChild) significa que el nuevo aparece abajo
         // y empuja a los anteriores hacia arriba automáticamente.
@@ -44,7 +45,7 @@ export default class NotificationsManager {
         // Quitar la notificación únicamente al darle click
         const removeFn = () => {
             // Prevenir doble ejecución si ya se está eliminando
-            if (notif.style.pointerEvents === 'none') return; 
+            if (notif.style.pointerEvents === 'none') return;
 
             notif.style.opacity = '0';
             notif.style.transform = 'translateY(20px)'; // Animamos su salida hacia abajo
@@ -57,7 +58,7 @@ export default class NotificationsManager {
         };
 
         notif.addEventListener('click', removeFn);
-        
+
         // Retornar la función para que quien la lanza pueda limpiarla también
         return removeFn;
     }

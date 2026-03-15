@@ -19,13 +19,16 @@ export default class CitiesRouteView {
 
         this.updateRender();
     }
-
+    private cityToName(city: TCity) {
+        if (!city) return "--"
+        return city.name + `(${city.countryCode})`
+    }
     private updateRender() {
         // Un ícono de avión ✈️ o una flecha para separar las ciudades
         this.container.innerHTML = `
-            <span class="ui-city-name-from">${this.fromCity?.name || '---'}</span>
+            <span class="ui-city-name-from">${this.cityToName(this.fromCity)}</span>
             <span class="ui-city-divider">✈️</span>
-            <span class="ui-city-name-to">${this.toCity?.name || '---'}</span>
+            <span class="ui-city-name-to">${this.cityToName(this.toCity)}</span>
         `;
     }
 

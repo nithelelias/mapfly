@@ -1,5 +1,9 @@
 {
   "name": "mapfly",
+  "author": {
+    "name": "nithel elias",
+    "email": "nithelelias@gmail.com"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
