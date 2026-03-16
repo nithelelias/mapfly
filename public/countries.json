@@ -9,15 +9,6 @@
         "code": "ZW"
     },
     {
-        "name": "Kiribati",
-        "latlng": [
-            1.41666666,
-            173
-        ],
-        "region": "Oceania",
-        "code": "KI"
-    },
-    {
         "name": "Ghana",
         "latlng": [
             8,
@@ -25,42 +16,6 @@
         ],
         "region": "Africa",
         "code": "GH"
-    },
-    {
-        "name": "North Korea",
-        "latlng": [
-            40,
-            127
-        ],
-        "region": "Asia",
-        "code": "KP"
-    },
-    {
-        "name": "Spain",
-        "latlng": [
-            40,
-            -4
-        ],
-        "region": "Europe",
-        "code": "ES"
-    },
-    {
-        "name": "Jordan",
-        "latlng": [
-            31,
-            36
-        ],
-        "region": "Asia",
-        "code": "JO"
-    },
-    {
-        "name": "San Marino",
-        "latlng": [
-            43.76666666,
-            12.41666666
-        ],
-        "region": "Europe",
-        "code": "SM"
     },
     {
         "name": "Ivory Coast",
@@ -72,42 +27,6 @@
         "code": "CI"
     },
     {
-        "name": "Brazil",
-        "latlng": [
-            -10,
-            -55
-        ],
-        "region": "Americas",
-        "code": "BR"
-    },
-    {
-        "name": "Colombia",
-        "latlng": [
-            4,
-            -72
-        ],
-        "region": "Americas",
-        "code": "CO"
-    },
-    {
-        "name": "Heard Island and McDonald Islands",
-        "latlng": [
-            -53.0818,
-            73.5042
-        ],
-        "region": "Antarctic",
-        "code": "HM"
-    },
-    {
-        "name": "Dominica",
-        "latlng": [
-            15.41666666,
-            -61.33333333
-        ],
-        "region": "Americas",
-        "code": "DM"
-    },
-    {
         "name": "Djibouti",
         "latlng": [
             11.5,
@@ -115,42 +34,6 @@
         ],
         "region": "Africa",
         "code": "DJ"
-    },
-    {
-        "name": "Slovenia",
-        "latlng": [
-            46.11666666,
-            14.81666666
-        ],
-        "region": "Europe",
-        "code": "SI"
-    },
-    {
-        "name": "Anguilla",
-        "latlng": [
-            18.25,
-            -63.16666666
-        ],
-        "region": "Americas",
-        "code": "AI"
-    },
-    {
-        "name": "North Macedonia",
-        "latlng": [
-            41.83333333,
-            22
-        ],
-        "region": "Europe",
-        "code": "MK"
-    },
-    {
-        "name": "Solomon Islands",
-        "latlng": [
-            -8,
-            159
-        ],
-        "region": "Oceania",
-        "code": "SB"
     },
     {
         "name": "Chad",
@@ -162,76 +45,22 @@
         "code": "TD"
     },
     {
-        "name": "Burundi",
+        "name": "Kiribati",
         "latlng": [
-            -3.5,
-            30
+            1.41666666,
+            173
         ],
-        "region": "Africa",
-        "code": "BI"
+        "region": "Oceania",
+        "code": "KI"
     },
     {
-        "name": "Italy",
+        "name": "Solomon Islands",
         "latlng": [
-            42.83333333,
-            12.83333333
+            -8,
+            159
         ],
-        "region": "Europe",
-        "code": "IT"
-    },
-    {
-        "name": "Ethiopia",
-        "latlng": [
-            8,
-            38
-        ],
-        "region": "Africa",
-        "code": "ET"
-    },
-    {
-        "name": "Vietnam",
-        "latlng": [
-            16.16666666,
-            107.83333333
-        ],
-        "region": "Asia",
-        "code": "VN"
-    },
-    {
-        "name": "Togo",
-        "latlng": [
-            8,
-            1.16666666
-        ],
-        "region": "Africa",
-        "code": "TG"
-    },
-    {
-        "name": "Martinique",
-        "latlng": [
-            14.666667,
-            -61
-        ],
-        "region": "Americas",
-        "code": "MQ"
-    },
-    {
-        "name": "Poland",
-        "latlng": [
-            52,
-            20
-        ],
-        "region": "Europe",
-        "code": "PL"
-    },
-    {
-        "name": "Portugal",
-        "latlng": [
-            39.5,
-            -8
-        ],
-        "region": "Europe",
-        "code": "PT"
+        "region": "Oceania",
+        "code": "SB"
     },
     {
         "name": "Christmas Island",
@@ -241,33 +70,6 @@
         ],
         "region": "Oceania",
         "code": "CX"
-    },
-    {
-        "name": "Israel",
-        "latlng": [
-            31.47,
-            35.13
-        ],
-        "region": "Asia",
-        "code": "IL"
-    },
-    {
-        "name": "Argentina",
-        "latlng": [
-            -34,
-            -64
-        ],
-        "region": "Americas",
-        "code": "AR"
-    },
-    {
-        "name": "Afghanistan",
-        "latlng": [
-            33,
-            65
-        ],
-        "region": "Asia",
-        "code": "AF"
     },
     {
         "name": "Papua New Guinea",
@@ -288,463 +90,49 @@
         "code": "NZ"
     },
     {
-        "name": "El Salvador",
-        "latlng": [
-            13.83333333,
-            -88.91666666
-        ],
-        "region": "Americas",
-        "code": "SV"
-    },
-    {
-        "name": "Czechia",
-        "latlng": [
-            49.75,
-            15.5
-        ],
-        "region": "Europe",
-        "code": "CZ"
-    },
-    {
-        "name": "Cameroon",
-        "latlng": [
-            6,
-            12
-        ],
-        "region": "Africa",
-        "code": "CM"
-    },
-    {
-        "name": "Yemen",
-        "latlng": [
-            15,
-            48
-        ],
-        "region": "Asia",
-        "code": "YE"
-    },
-    {
-        "name": "Panama",
-        "latlng": [
-            9,
-            -80
-        ],
-        "region": "Americas",
-        "code": "PA"
-    },
-    {
-        "name": "Timor-Leste",
-        "latlng": [
-            -8.83333333,
-            125.91666666
-        ],
-        "region": "Asia",
-        "code": "TL"
-    },
-    {
-        "name": "Cuba",
-        "latlng": [
-            21.5,
-            -80
-        ],
-        "region": "Americas",
-        "code": "CU"
-    },
-    {
-        "name": "Russia",
-        "latlng": [
-            60,
-            100
-        ],
-        "region": "Europe",
-        "code": "RU"
-    },
-    {
-        "name": "Antigua and Barbuda",
-        "latlng": [
-            17.05,
-            -61.8
-        ],
-        "region": "Americas",
-        "code": "AG"
-    },
-    {
-        "name": "Saint Barthélemy",
-        "latlng": [
-            18.5,
-            -63.41666666
-        ],
-        "region": "Americas",
-        "code": "BL"
-    },
-    {
-        "name": "Bolivia",
-        "latlng": [
-            -17,
-            -65
-        ],
-        "region": "Americas",
-        "code": "BO"
-    },
-    {
-        "name": "Australia",
-        "latlng": [
-            -27,
-            133
-        ],
-        "region": "Oceania",
-        "code": "AU"
-    },
-    {
-        "name": "United States Minor Outlying Islands",
-        "latlng": [
-            19.3,
-            166.633333
-        ],
-        "region": "Americas",
-        "code": "UM"
-    },
-    {
-        "name": "Fiji",
-        "latlng": [
-            -17.7134,
-            178.065
-        ],
-        "region": "Oceania",
-        "code": "FJ"
-    },
-    {
-        "name": "Myanmar",
-        "latlng": [
-            22,
-            98
-        ],
-        "region": "Asia",
-        "code": "MM"
-    },
-    {
-        "name": "São Tomé and Príncipe",
-        "latlng": [
-            1,
-            7
-        ],
-        "region": "Africa",
-        "code": "ST"
-    },
-    {
-        "name": "Madagascar",
-        "latlng": [
-            -20,
-            47
-        ],
-        "region": "Africa",
-        "code": "MG"
-    },
-    {
-        "name": "Tuvalu",
-        "latlng": [
-            -8,
-            178
-        ],
-        "region": "Oceania",
-        "code": "TV"
-    },
-    {
-        "name": "Guernsey",
-        "latlng": [
-            49.46666666,
-            -2.58333333
-        ],
-        "region": "Europe",
-        "code": "GG"
-    },
-    {
-        "name": "Cocos (Keeling) Islands",
-        "latlng": [
-            -12.1642,
-            96.871
-        ],
-        "region": "Oceania",
-        "code": "CC"
-    },
-    {
-        "name": "Hungary",
-        "latlng": [
-            47,
-            20
-        ],
-        "region": "Europe",
-        "code": "HU"
-    },
-    {
-        "name": "Egypt",
-        "latlng": [
-            27,
-            30
-        ],
-        "region": "Africa",
-        "code": "EG"
-    },
-    {
-        "name": "Kyrgyzstan",
-        "latlng": [
-            41,
-            75
-        ],
-        "region": "Asia",
-        "code": "KG"
-    },
-    {
-        "name": "Indonesia",
-        "latlng": [
-            -5,
-            120
-        ],
-        "region": "Asia",
-        "code": "ID"
-    },
-    {
-        "name": "Tunisia",
-        "latlng": [
-            34,
-            9
-        ],
-        "region": "Africa",
-        "code": "TN"
-    },
-    {
-        "name": "American Samoa",
-        "latlng": [
-            -14.33333333,
-            -170
-        ],
-        "region": "Oceania",
-        "code": "AS"
-    },
-    {
-        "name": "Oman",
-        "latlng": [
-            21,
-            57
-        ],
-        "region": "Asia",
-        "code": "OM"
-    },
-    {
-        "name": "French Polynesia",
-        "latlng": [
-            -17.6797,
-            -149.4068
-        ],
-        "region": "Oceania",
-        "code": "PF"
-    },
-    {
-        "name": "United States",
-        "latlng": [
-            38,
-            -97
-        ],
-        "region": "Americas",
-        "code": "US"
-    },
-    {
-        "name": "Falkland Islands",
-        "latlng": [
-            -51.75,
-            -59
-        ],
-        "region": "Americas",
-        "code": "FK"
-    },
-    {
-        "name": "Saint Martin",
-        "latlng": [
-            18.0708,
-            -63.0501
-        ],
-        "region": "Americas",
-        "code": "MF"
-    },
-    {
-        "name": "Suriname",
-        "latlng": [
-            4,
-            -56
-        ],
-        "region": "Americas",
-        "code": "SR"
-    },
-    {
-        "name": "Azerbaijan",
-        "latlng": [
-            40.5,
-            47.5
-        ],
-        "region": "Asia",
-        "code": "AZ"
-    },
-    {
-        "name": "Netherlands",
-        "latlng": [
-            52.5,
-            5.75
-        ],
-        "region": "Europe",
-        "code": "NL"
-    },
-    {
-        "name": "Palestine",
-        "latlng": [
-            31.9,
-            35.2
-        ],
-        "region": "Asia",
-        "code": "PS"
-    },
-    {
-        "name": "Slovakia",
-        "latlng": [
-            48.66666666,
-            19.5
-        ],
-        "region": "Europe",
-        "code": "SK"
-    },
-    {
-        "name": "Uganda",
-        "latlng": [
-            1,
-            32
-        ],
-        "region": "Africa",
-        "code": "UG"
-    },
-    {
-        "name": "Cayman Islands",
-        "latlng": [
-            19.3133,
-            -81.2546
-        ],
-        "region": "Americas",
-        "code": "KY"
-    },
-    {
-        "name": "Saint Lucia",
-        "latlng": [
-            13.88333333,
-            -60.96666666
-        ],
-        "region": "Americas",
-        "code": "LC"
-    },
-    {
-        "name": "Libya",
-        "latlng": [
-            25,
-            17
-        ],
-        "region": "Africa",
-        "code": "LY"
-    },
-    {
-        "name": "Northern Mariana Islands",
-        "latlng": [
-            15.2,
-            145.75
-        ],
-        "region": "Oceania",
-        "code": "MP"
-    },
-    {
-        "name": "Armenia",
+        "name": "North Korea",
         "latlng": [
             40,
-            45
+            127
         ],
         "region": "Asia",
-        "code": "AM"
+        "code": "KP"
     },
     {
-        "name": "Comoros",
+        "name": "Jordan",
         "latlng": [
-            -12.16666666,
-            44.25
-        ],
-        "region": "Africa",
-        "code": "KM"
-    },
-    {
-        "name": "Guyana",
-        "latlng": [
-            5,
-            -59
-        ],
-        "region": "Americas",
-        "code": "GY"
-    },
-    {
-        "name": "United Arab Emirates",
-        "latlng": [
-            24,
-            54
+            31,
+            36
         ],
         "region": "Asia",
-        "code": "AE"
+        "code": "JO"
     },
     {
-        "name": "Turkey",
+        "name": "Vietnam",
         "latlng": [
-            39,
-            35
+            16.16666666,
+            107.83333333
         ],
         "region": "Asia",
-        "code": "TR"
+        "code": "VN"
     },
     {
-        "name": "Samoa",
+        "name": "Israel",
         "latlng": [
-            -13.58333333,
-            -172.33333333
-        ],
-        "region": "Oceania",
-        "code": "WS"
-    },
-    {
-        "name": "Germany",
-        "latlng": [
-            51,
-            9
-        ],
-        "region": "Europe",
-        "code": "DE"
-    },
-    {
-        "name": "Gambia",
-        "latlng": [
-            13.46666666,
-            -16.56666666
-        ],
-        "region": "Africa",
-        "code": "GM"
-    },
-    {
-        "name": "Mongolia",
-        "latlng": [
-            46,
-            105
+            31.47,
+            35.13
         ],
         "region": "Asia",
-        "code": "MN"
+        "code": "IL"
     },
     {
-        "name": "Serbia",
+        "name": "Afghanistan",
         "latlng": [
-            44,
-            21
+            33,
+            65
         ],
-        "region": "Europe",
-        "code": "RS"
+        "region": "Asia",
+        "code": "AF"
     },
     {
         "name": "China",
@@ -756,121 +144,148 @@
         "code": "CN"
     },
     {
-        "name": "Montenegro",
+        "name": "Japan",
         "latlng": [
-            42.5,
-            19.3
-        ],
-        "region": "Europe",
-        "code": "ME"
-    },
-    {
-        "name": "Guam",
-        "latlng": [
-            13.46666666,
-            144.78333333
-        ],
-        "region": "Oceania",
-        "code": "GU"
-    },
-    {
-        "name": "Cambodia",
-        "latlng": [
-            13,
-            105
+            36,
+            138
         ],
         "region": "Asia",
-        "code": "KH"
+        "code": "JP"
     },
     {
-        "name": "Liechtenstein",
+        "name": "Spain",
         "latlng": [
-            47.26666666,
-            9.53333333
+            40,
+            -4
         ],
         "region": "Europe",
-        "code": "LI"
+        "code": "ES"
     },
     {
-        "name": "Senegal",
+        "name": "San Marino",
         "latlng": [
-            14,
-            -14
-        ],
-        "region": "Africa",
-        "code": "SN"
-    },
-    {
-        "name": "United Kingdom",
-        "latlng": [
-            54,
-            -2
+            43.76666666,
+            12.41666666
         ],
         "region": "Europe",
-        "code": "GB"
+        "code": "SM"
     },
     {
-        "name": "Caribbean Netherlands",
+        "name": "Slovenia",
         "latlng": [
-            12.18,
-            -68.25
+            46.11666666,
+            14.81666666
+        ],
+        "region": "Europe",
+        "code": "SI"
+    },
+    {
+        "name": "North Macedonia",
+        "latlng": [
+            41.83333333,
+            22
+        ],
+        "region": "Europe",
+        "code": "MK"
+    },
+    {
+        "name": "Italy",
+        "latlng": [
+            42.83333333,
+            12.83333333
+        ],
+        "region": "Europe",
+        "code": "IT"
+    },
+    {
+        "name": "Greece",
+        "latlng": [
+            39,
+            22
+        ],
+        "region": "Europe",
+        "code": "GR"
+    },
+    {
+        "name": "France",
+        "latlng": [
+            46,
+            2
+        ],
+        "region": "Europe",
+        "code": "FR"
+    },
+    {
+        "name": "Brazil",
+        "latlng": [
+            -10,
+            -55
         ],
         "region": "Americas",
-        "code": "BQ"
+        "code": "BR"
     },
     {
-        "name": "French Guiana",
+        "name": "Colombia",
         "latlng": [
             4,
-            -53
+            -72
         ],
         "region": "Americas",
-        "code": "GF"
+        "code": "CO"
     },
     {
-        "name": "Burkina Faso",
+        "name": "Dominica",
         "latlng": [
-            13,
-            -2
-        ],
-        "region": "Africa",
-        "code": "BF"
-    },
-    {
-        "name": "Qatar",
-        "latlng": [
-            25.5,
-            51.25
-        ],
-        "region": "Asia",
-        "code": "QA"
-    },
-    {
-        "name": "Ukraine",
-        "latlng": [
-            49,
-            32
-        ],
-        "region": "Europe",
-        "code": "UA"
-    },
-    {
-        "name": "Mexico",
-        "latlng": [
-            23,
-            -102
+            15.41666666,
+            -61.33333333
         ],
         "region": "Americas",
-        "code": "MX"
+        "code": "DM"
     },
     {
-        "name": "Isle of Man",
+        "name": "Anguilla",
         "latlng": [
-            54.25,
-            -4.5
+            18.25,
+            -63.16666666
         ],
-        "region": "Europe",
-        "code": "IM"
+        "region": "Americas",
+        "code": "AI"
+    },
+    {
+        "name": "Martinique",
+        "latlng": [
+            14.666667,
+            -61
+        ],
+        "region": "Americas",
+        "code": "MQ"
+    },
+    {
+        "name": "United States",
+        "latlng": [
+            38,
+            -97
+        ],
+        "region": "Americas",
+        "code": "US"
+    },
+    {
+        "name": "Peru",
+        "latlng": [
+            -10,
+            -76
+        ],
+        "region": "Americas",
+        "code": "PE"
+    },
+    {
+        "name": "Heard Island and McDonald Islands",
+        "latlng": [
+            -53.0818,
+            73.5042
+        ],
+        "region": "Antarctic",
+        "code": "HM"
     },
     {
         "name": "Antarctica",
@@ -891,690 +306,6 @@
         "code": "GS"
     },
     {
-        "name": "Western Sahara",
-        "latlng": [
-            24.5,
-            -13
-        ],
-        "region": "Africa",
-        "code": "EH"
-    },
-    {
-        "name": "Turks and Caicos Islands",
-        "latlng": [
-            21.75,
-            -71.58333333
-        ],
-        "region": "Americas",
-        "code": "TC"
-    },
-    {
-        "name": "Albania",
-        "latlng": [
-            41,
-            20
-        ],
-        "region": "Europe",
-        "code": "AL"
-    },
-    {
-        "name": "Cyprus",
-        "latlng": [
-            35,
-            33
-        ],
-        "region": "Europe",
-        "code": "CY"
-    },
-    {
-        "name": "Guatemala",
-        "latlng": [
-            15.5,
-            -90.25
-        ],
-        "region": "Americas",
-        "code": "GT"
-    },
-    {
-        "name": "Nauru",
-        "latlng": [
-            -0.53333333,
-            166.91666666
-        ],
-        "region": "Oceania",
-        "code": "NR"
-    },
-    {
-        "name": "Saint Helena, Ascension and Tristan da Cunha",
-        "latlng": [
-            -15.95,
-            -5.72
-        ],
-        "region": "Africa",
-        "code": "SH"
-    },
-    {
-        "name": "Latvia",
-        "latlng": [
-            57,
-            25
-        ],
-        "region": "Europe",
-        "code": "LV"
-    },
-    {
-        "name": "Cook Islands",
-        "latlng": [
-            -21.23333333,
-            -159.76666666
-        ],
-        "region": "Oceania",
-        "code": "CK"
-    },
-    {
-        "name": "Malta",
-        "latlng": [
-            35.9375,
-            14.3754
-        ],
-        "region": "Europe",
-        "code": "MT"
-    },
-    {
-        "name": "Pitcairn Islands",
-        "latlng": [
-            -25.06666666,
-            -130.1
-        ],
-        "region": "Oceania",
-        "code": "PN"
-    },
-    {
-        "name": "South Korea",
-        "latlng": [
-            37,
-            127.5
-        ],
-        "region": "Asia",
-        "code": "KR"
-    },
-    {
-        "name": "New Caledonia",
-        "latlng": [
-            -21.5,
-            165.5
-        ],
-        "region": "Oceania",
-        "code": "NC"
-    },
-    {
-        "name": "Mozambique",
-        "latlng": [
-            -18.25,
-            35
-        ],
-        "region": "Africa",
-        "code": "MZ"
-    },
-    {
-        "name": "Luxembourg",
-        "latlng": [
-            49.75,
-            6.16666666
-        ],
-        "region": "Europe",
-        "code": "LU"
-    },
-    {
-        "name": "Ireland",
-        "latlng": [
-            53,
-            -8
-        ],
-        "region": "Europe",
-        "code": "IE"
-    },
-    {
-        "name": "Nigeria",
-        "latlng": [
-            10,
-            8
-        ],
-        "region": "Africa",
-        "code": "NG"
-    },
-    {
-        "name": "Bahamas",
-        "latlng": [
-            25.0343,
-            -77.3963
-        ],
-        "region": "Americas",
-        "code": "BS"
-    },
-    {
-        "name": "Marshall Islands",
-        "latlng": [
-            9,
-            168
-        ],
-        "region": "Oceania",
-        "code": "MH"
-    },
-    {
-        "name": "Greece",
-        "latlng": [
-            39,
-            22
-        ],
-        "region": "Europe",
-        "code": "GR"
-    },
-    {
-        "name": "Maldives",
-        "latlng": [
-            3.25,
-            73
-        ],
-        "region": "Asia",
-        "code": "MV"
-    },
-    {
-        "name": "Niue",
-        "latlng": [
-            -19.03333333,
-            -169.86666666
-        ],
-        "region": "Oceania",
-        "code": "NU"
-    },
-    {
-        "name": "Syria",
-        "latlng": [
-            35,
-            38
-        ],
-        "region": "Asia",
-        "code": "SY"
-    },
-    {
-        "name": "Ecuador",
-        "latlng": [
-            -2,
-            -77.5
-        ],
-        "region": "Americas",
-        "code": "EC"
-    },
-    {
-        "name": "Turkmenistan",
-        "latlng": [
-            40,
-            60
-        ],
-        "region": "Asia",
-        "code": "TM"
-    },
-    {
-        "name": "Wallis and Futuna",
-        "latlng": [
-            -13.3,
-            -176.2
-        ],
-        "region": "Oceania",
-        "code": "WF"
-    },
-    {
-        "name": "Brunei",
-        "latlng": [
-            4.5,
-            114.66666666
-        ],
-        "region": "Asia",
-        "code": "BN"
-    },
-    {
-        "name": "Uzbekistan",
-        "latlng": [
-            41,
-            64
-        ],
-        "region": "Asia",
-        "code": "UZ"
-    },
-    {
-        "name": "Bahrain",
-        "latlng": [
-            26,
-            50.55
-        ],
-        "region": "Asia",
-        "code": "BH"
-    },
-    {
-        "name": "British Virgin Islands",
-        "latlng": [
-            18.431383,
-            -64.62305
-        ],
-        "region": "Americas",
-        "code": "VG"
-    },
-    {
-        "name": "Moldova",
-        "latlng": [
-            47,
-            29
-        ],
-        "region": "Europe",
-        "code": "MD"
-    },
-    {
-        "name": "Mauritius",
-        "latlng": [
-            -20.28333333,
-            57.55
-        ],
-        "region": "Africa",
-        "code": "MU"
-    },
-    {
-        "name": "Tonga",
-        "latlng": [
-            -20,
-            -175
-        ],
-        "region": "Oceania",
-        "code": "TO"
-    },
-    {
-        "name": "Seychelles",
-        "latlng": [
-            -4.58333333,
-            55.66666666
-        ],
-        "region": "Africa",
-        "code": "SC"
-    },
-    {
-        "name": "Angola",
-        "latlng": [
-            -12.5,
-            18.5
-        ],
-        "region": "Africa",
-        "code": "AO"
-    },
-    {
-        "name": "Estonia",
-        "latlng": [
-            59,
-            26
-        ],
-        "region": "Europe",
-        "code": "EE"
-    },
-    {
-        "name": "Bermuda",
-        "latlng": [
-            32.33333333,
-            -64.75
-        ],
-        "region": "Americas",
-        "code": "BM"
-    },
-    {
-        "name": "Philippines",
-        "latlng": [
-            13,
-            122
-        ],
-        "region": "Asia",
-        "code": "PH"
-    },
-    {
-        "name": "Vatican City",
-        "latlng": [
-            41.9,
-            12.45
-        ],
-        "region": "Europe",
-        "code": "VA"
-    },
-    {
-        "name": "Venezuela",
-        "latlng": [
-            8,
-            -66
-        ],
-        "region": "Americas",
-        "code": "VE"
-    },
-    {
-        "name": "Barbados",
-        "latlng": [
-            13.16666666,
-            -59.53333333
-        ],
-        "region": "Americas",
-        "code": "BB"
-    },
-    {
-        "name": "India",
-        "latlng": [
-            20,
-            77
-        ],
-        "region": "Asia",
-        "code": "IN"
-    },
-    {
-        "name": "Mali",
-        "latlng": [
-            17,
-            -4
-        ],
-        "region": "Africa",
-        "code": "ML"
-    },
-    {
-        "name": "Norfolk Island",
-        "latlng": [
-            -29.03333333,
-            167.95
-        ],
-        "region": "Oceania",
-        "code": "NF"
-    },
-    {
-        "name": "Belarus",
-        "latlng": [
-            53,
-            28
-        ],
-        "region": "Europe",
-        "code": "BY"
-    },
-    {
-        "name": "Saint Kitts and Nevis",
-        "latlng": [
-            17.33333333,
-            -62.75
-        ],
-        "region": "Americas",
-        "code": "KN"
-    },
-    {
-        "name": "Guadeloupe",
-        "latlng": [
-            16.25,
-            -61.583333
-        ],
-        "region": "Americas",
-        "code": "GP"
-    },
-    {
-        "name": "Lithuania",
-        "latlng": [
-            56,
-            24
-        ],
-        "region": "Europe",
-        "code": "LT"
-    },
-    {
-        "name": "Montserrat",
-        "latlng": [
-            16.75,
-            -62.2
-        ],
-        "region": "Americas",
-        "code": "MS"
-    },
-    {
-        "name": "Niger",
-        "latlng": [
-            16,
-            8
-        ],
-        "region": "Africa",
-        "code": "NE"
-    },
-    {
-        "name": "Equatorial Guinea",
-        "latlng": [
-            2,
-            10
-        ],
-        "region": "Africa",
-        "code": "GQ"
-    },
-    {
-        "name": "Iraq",
-        "latlng": [
-            33,
-            44
-        ],
-        "region": "Asia",
-        "code": "IQ"
-    },
-    {
-        "name": "Mauritania",
-        "latlng": [
-            20,
-            -12
-        ],
-        "region": "Africa",
-        "code": "MR"
-    },
-    {
-        "name": "Taiwan",
-        "latlng": [
-            23.5,
-            121
-        ],
-        "region": "Asia",
-        "code": "TW"
-    },
-    {
-        "name": "Georgia",
-        "latlng": [
-            42,
-            43.5
-        ],
-        "region": "Asia",
-        "code": "GE"
-    },
-    {
-        "name": "Puerto Rico",
-        "latlng": [
-            18.25,
-            -66.5
-        ],
-        "region": "Americas",
-        "code": "PR"
-    },
-    {
-        "name": "Paraguay",
-        "latlng": [
-            -23,
-            -58
-        ],
-        "region": "Americas",
-        "code": "PY"
-    },
-    {
-        "name": "Sierra Leone",
-        "latlng": [
-            8.5,
-            -11.5
-        ],
-        "region": "Africa",
-        "code": "SL"
-    },
-    {
-        "name": "Botswana",
-        "latlng": [
-            -22,
-            24
-        ],
-        "region": "Africa",
-        "code": "BW"
-    },
-    {
-        "name": "Mayotte",
-        "latlng": [
-            -12.83333333,
-            45.16666666
-        ],
-        "region": "Africa",
-        "code": "YT"
-    },
-    {
-        "name": "Finland",
-        "latlng": [
-            64,
-            26
-        ],
-        "region": "Europe",
-        "code": "FI"
-    },
-    {
-        "name": "Jersey",
-        "latlng": [
-            49.25,
-            -2.16666666
-        ],
-        "region": "Europe",
-        "code": "JE"
-    },
-    {
-        "name": "Faroe Islands",
-        "latlng": [
-            62,
-            -7
-        ],
-        "region": "Europe",
-        "code": "FO"
-    },
-    {
-        "name": "Sweden",
-        "latlng": [
-            62,
-            15
-        ],
-        "region": "Europe",
-        "code": "SE"
-    },
-    {
-        "name": "Sri Lanka",
-        "latlng": [
-            7,
-            81
-        ],
-        "region": "Asia",
-        "code": "LK"
-    },
-    {
-        "name": "Thailand",
-        "latlng": [
-            15,
-            100
-        ],
-        "region": "Asia",
-        "code": "TH"
-    },
-    {
-        "name": "Greenland",
-        "latlng": [
-            72,
-            -40
-        ],
-        "region": "Americas",
-        "code": "GL"
-    },
-    {
-        "name": "Bulgaria",
-        "latlng": [
-            43,
-            25
-        ],
-        "region": "Europe",
-        "code": "BG"
-    },
-    {
-        "name": "Kenya",
-        "latlng": [
-            1,
-            38
-        ],
-        "region": "Africa",
-        "code": "KE"
-    },
-    {
-        "name": "Hong Kong",
-        "latlng": [
-            22.267,
-            114.188
-        ],
-        "region": "Asia",
-        "code": "HK"
-    },
-    {
-        "name": "Romania",
-        "latlng": [
-            46,
-            25
-        ],
-        "region": "Europe",
-        "code": "RO"
-    },
-    {
-        "name": "Malawi",
-        "latlng": [
-            -13.5,
-            34
-        ],
-        "region": "Africa",
-        "code": "MW"
-    },
-    {
-        "name": "Republic of the Congo",
-        "latlng": [
-            -1,
-            15
-        ],
-        "region": "Africa",
-        "code": "CG"
-    },
-    {
-        "name": "Honduras",
-        "latlng": [
-            15,
-            -86.5
-        ],
-        "region": "Americas",
-        "code": "HN"
-    },
-    {
-        "name": "Aruba",
-        "latlng": [
-            12.5,
-            -69.96666666
-        ],
-        "region": "Americas",
-        "code": "AW"
-    },
-    {
-        "name": "Monaco",
-        "latlng": [
-            43.73333333,
-            7.4
-        ],
-        "region": "Europe",
-        "code": "MC"
-    },
-    {
         "name": "Bouvet Island",
         "latlng": [
             -54.4208,
@@ -1584,438 +315,6 @@
         "code": "BV"
     },
     {
-        "name": "Zambia",
-        "latlng": [
-            -15,
-            30
-        ],
-        "region": "Africa",
-        "code": "ZM"
-    },
-    {
-        "name": "Andorra",
-        "latlng": [
-            42.5,
-            1.5
-        ],
-        "region": "Europe",
-        "code": "AD"
-    },
-    {
-        "name": "Liberia",
-        "latlng": [
-            6.5,
-            -9.5
-        ],
-        "region": "Africa",
-        "code": "LR"
-    },
-    {
-        "name": "Tanzania",
-        "latlng": [
-            -6,
-            35
-        ],
-        "region": "Africa",
-        "code": "TZ"
-    },
-    {
-        "name": "Saint Pierre and Miquelon",
-        "latlng": [
-            46.83333333,
-            -56.33333333
-        ],
-        "region": "Americas",
-        "code": "PM"
-    },
-    {
-        "name": "Iran",
-        "latlng": [
-            32,
-            53
-        ],
-        "region": "Asia",
-        "code": "IR"
-    },
-    {
-        "name": "Iceland",
-        "latlng": [
-            65,
-            -18
-        ],
-        "region": "Europe",
-        "code": "IS"
-    },
-    {
-        "name": "Guinea",
-        "latlng": [
-            11,
-            -10
-        ],
-        "region": "Africa",
-        "code": "GN"
-    },
-    {
-        "name": "Svalbard and Jan Mayen",
-        "latlng": [
-            78,
-            20
-        ],
-        "region": "Europe",
-        "code": "SJ"
-    },
-    {
-        "name": "Kuwait",
-        "latlng": [
-            29.5,
-            45.75
-        ],
-        "region": "Asia",
-        "code": "KW"
-    },
-    {
-        "name": "Morocco",
-        "latlng": [
-            32,
-            -5
-        ],
-        "region": "Africa",
-        "code": "MA"
-    },
-    {
-        "name": "Namibia",
-        "latlng": [
-            -22,
-            17
-        ],
-        "region": "Africa",
-        "code": "NA"
-    },
-    {
-        "name": "Tajikistan",
-        "latlng": [
-            39,
-            71
-        ],
-        "region": "Asia",
-        "code": "TJ"
-    },
-    {
-        "name": "Vanuatu",
-        "latlng": [
-            -16,
-            167
-        ],
-        "region": "Oceania",
-        "code": "VU"
-    },
-    {
-        "name": "Jamaica",
-        "latlng": [
-            18.25,
-            -77.5
-        ],
-        "region": "Americas",
-        "code": "JM"
-    },
-    {
-        "name": "Palau",
-        "latlng": [
-            7.5,
-            134.5
-        ],
-        "region": "Oceania",
-        "code": "PW"
-    },
-    {
-        "name": "Uruguay",
-        "latlng": [
-            -33,
-            -56
-        ],
-        "region": "Americas",
-        "code": "UY"
-    },
-    {
-        "name": "Bhutan",
-        "latlng": [
-            27.5,
-            90.5
-        ],
-        "region": "Asia",
-        "code": "BT"
-    },
-    {
-        "name": "DR Congo",
-        "latlng": [
-            0,
-            25
-        ],
-        "region": "Africa",
-        "code": "CD"
-    },
-    {
-        "name": "Kazakhstan",
-        "latlng": [
-            48.0196,
-            66.9237
-        ],
-        "region": "Asia",
-        "code": "KZ"
-    },
-    {
-        "name": "Eritrea",
-        "latlng": [
-            15,
-            39
-        ],
-        "region": "Africa",
-        "code": "ER"
-    },
-    {
-        "name": "Gibraltar",
-        "latlng": [
-            36.13333333,
-            -5.35
-        ],
-        "region": "Europe",
-        "code": "GI"
-    },
-    {
-        "name": "Gabon",
-        "latlng": [
-            -1,
-            11.75
-        ],
-        "region": "Africa",
-        "code": "GA"
-    },
-    {
-        "name": "Peru",
-        "latlng": [
-            -10,
-            -76
-        ],
-        "region": "Americas",
-        "code": "PE"
-    },
-    {
-        "name": "Denmark",
-        "latlng": [
-            56,
-            10
-        ],
-        "region": "Europe",
-        "code": "DK"
-    },
-    {
-        "name": "Croatia",
-        "latlng": [
-            45.16666666,
-            15.5
-        ],
-        "region": "Europe",
-        "code": "HR"
-    },
-    {
-        "name": "Curaçao",
-        "latlng": [
-            12.116667,
-            -68.933333
-        ],
-        "region": "Americas",
-        "code": "CW"
-    },
-    {
-        "name": "British Indian Ocean Territory",
-        "latlng": [
-            -6,
-            71.5
-        ],
-        "region": "Africa",
-        "code": "IO"
-    },
-    {
-        "name": "Norway",
-        "latlng": [
-            62,
-            10
-        ],
-        "region": "Europe",
-        "code": "NO"
-    },
-    {
-        "name": "Lesotho",
-        "latlng": [
-            -29.5,
-            28.5
-        ],
-        "region": "Africa",
-        "code": "LS"
-    },
-    {
-        "name": "Austria",
-        "latlng": [
-            47.33333333,
-            13.33333333
-        ],
-        "region": "Europe",
-        "code": "AT"
-    },
-    {
-        "name": "Switzerland",
-        "latlng": [
-            47,
-            8
-        ],
-        "region": "Europe",
-        "code": "CH"
-    },
-    {
-        "name": "Belize",
-        "latlng": [
-            17.25,
-            -88.75
-        ],
-        "region": "Americas",
-        "code": "BZ"
-    },
-    {
-        "name": "Belgium",
-        "latlng": [
-            50.83333333,
-            4
-        ],
-        "region": "Europe",
-        "code": "BE"
-    },
-    {
-        "name": "Nicaragua",
-        "latlng": [
-            13,
-            -85
-        ],
-        "region": "Americas",
-        "code": "NI"
-    },
-    {
-        "name": "United States Virgin Islands",
-        "latlng": [
-            18.35,
-            -64.933333
-        ],
-        "region": "Americas",
-        "code": "VI"
-    },
-    {
-        "name": "Singapore",
-        "latlng": [
-            1.36666666,
-            103.8
-        ],
-        "region": "Asia",
-        "code": "SG"
-    },
-    {
-        "name": "Dominican Republic",
-        "latlng": [
-            19,
-            -70.66666666
-        ],
-        "region": "Americas",
-        "code": "DO"
-    },
-    {
-        "name": "Kosovo",
-        "latlng": [
-            42.666667,
-            21.166667
-        ],
-        "region": "Europe",
-        "code": "XK"
-    },
-    {
-        "name": "Laos",
-        "latlng": [
-            18,
-            105
-        ],
-        "region": "Asia",
-        "code": "LA"
-    },
-    {
-        "name": "Chile",
-        "latlng": [
-            -30,
-            -71
-        ],
-        "region": "Americas",
-        "code": "CL"
-    },
-    {
-        "name": "Costa Rica",
-        "latlng": [
-            10,
-            -84
-        ],
-        "region": "Americas",
-        "code": "CR"
-    },
-    {
-        "name": "Rwanda",
-        "latlng": [
-            -2,
-            30
-        ],
-        "region": "Africa",
-        "code": "RW"
-    },
-    {
-        "name": "Trinidad and Tobago",
-        "latlng": [
-            10.6918,
-            -61.2225
-        ],
-        "region": "Americas",
-        "code": "TT"
-    },
-    {
-        "name": "Malaysia",
-        "latlng": [
-            2.5,
-            112.5
-        ],
-        "region": "Asia",
-        "code": "MY"
-    },
-    {
-        "name": "South Africa",
-        "latlng": [
-            -29,
-            24
-        ],
-        "region": "Africa",
-        "code": "ZA"
-    },
-    {
-        "name": "Saudi Arabia",
-        "latlng": [
-            25,
-            45
-        ],
-        "region": "Asia",
-        "code": "SA"
-    },
-    {
-        "name": "Haiti",
-        "latlng": [
-            19,
-            -72.41666666
-        ],
-        "region": "Americas",
-        "code": "HT"
-    },
-    {
         "name": "French Southern and Antarctic Lands",
         "latlng": [
             -49.25,
@@ -2023,230 +322,5 @@
         ],
         "region": "Antarctic",
         "code": "TF"
-    },
-    {
-        "name": "Tokelau",
-        "latlng": [
-            -9,
-            -172
-        ],
-        "region": "Oceania",
-        "code": "TK"
-    },
-    {
-        "name": "Somalia",
-        "latlng": [
-            10,
-            49
-        ],
-        "region": "Africa",
-        "code": "SO"
-    },
-    {
-        "name": "Japan",
-        "latlng": [
-            36,
-            138
-        ],
-        "region": "Asia",
-        "code": "JP"
-    },
-    {
-        "name": "Macau",
-        "latlng": [
-            22.16666666,
-            113.55
-        ],
-        "region": "Asia",
-        "code": "MO"
-    },
-    {
-        "name": "Sudan",
-        "latlng": [
-            15,
-            30
-        ],
-        "region": "Africa",
-        "code": "SD"
-    },
-    {
-        "name": "Algeria",
-        "latlng": [
-            28,
-            3
-        ],
-        "region": "Africa",
-        "code": "DZ"
-    },
-    {
-        "name": "Eswatini",
-        "latlng": [
-            -26.5,
-            31.5
-        ],
-        "region": "Africa",
-        "code": "SZ"
-    },
-    {
-        "name": "France",
-        "latlng": [
-            46,
-            2
-        ],
-        "region": "Europe",
-        "code": "FR"
-    },
-    {
-        "name": "Sint Maarten",
-        "latlng": [
-            18.033333,
-            -63.05
-        ],
-        "region": "Americas",
-        "code": "SX"
-    },
-    {
-        "name": "Bangladesh",
-        "latlng": [
-            24,
-            90
-        ],
-        "region": "Asia",
-        "code": "BD"
-    },
-    {
-        "name": "Central African Republic",
-        "latlng": [
-            7,
-            21
-        ],
-        "region": "Africa",
-        "code": "CF"
-    },
-    {
-        "name": "Canada",
-        "latlng": [
-            60,
-            -95
-        ],
-        "region": "Americas",
-        "code": "CA"
-    },
-    {
-        "name": "Réunion",
-        "latlng": [
-            -21.15,
-            55.5
-        ],
-        "region": "Africa",
-        "code": "RE"
-    },
-    {
-        "name": "Saint Vincent and the Grenadines",
-        "latlng": [
-            13.25,
-            -61.2
-        ],
-        "region": "Americas",
-        "code": "VC"
-    },
-    {
-        "name": "Micronesia",
-        "latlng": [
-            6.91666666,
-            158.25
-        ],
-        "region": "Oceania",
-        "code": "FM"
-    },
-    {
-        "name": "Cape Verde",
-        "latlng": [
-            16.5388,
-            -23.0418
-        ],
-        "region": "Africa",
-        "code": "CV"
-    },
-    {
-        "name": "Grenada",
-        "latlng": [
-            12.11666666,
-            -61.66666666
-        ],
-        "region": "Americas",
-        "code": "GD"
-    },
-    {
-        "name": "Pakistan",
-        "latlng": [
-            30,
-            70
-        ],
-        "region": "Asia",
-        "code": "PK"
-    },
-    {
-        "name": "Nepal",
-        "latlng": [
-            28,
-            84
-        ],
-        "region": "Asia",
-        "code": "NP"
-    },
-    {
-        "name": "Bosnia and Herzegovina",
-        "latlng": [
-            44,
-            18
-        ],
-        "region": "Europe",
-        "code": "BA"
-    },
-    {
-        "name": "South Sudan",
-        "latlng": [
-            7,
-            30
-        ],
-        "region": "Africa",
-        "code": "SS"
-    },
-    {
-        "name": "Guinea-Bissau",
-        "latlng": [
-            12,
-            -15
-        ],
-        "region": "Africa",
-        "code": "GW"
-    },
-    {
-        "name": "Benin",
-        "latlng": [
-            9.5,
-            2.25
-        ],
-        "region": "Africa",
-        "code": "BJ"
-    },
-    {
-        "name": "Lebanon",
-        "latlng": [
-            33.83333333,
-            35.83333333
-        ],
-        "region": "Asia",
-        "code": "LB"
-    },
-    {
-        "name": "Åland Islands",
-        "latlng": [
-            60.116667,
-            19.9
-        ],
-        "region": "Europe",
-        "code": "AX"
     }
 ]

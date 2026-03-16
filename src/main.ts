@@ -5,10 +5,7 @@ import RequestCountries, { requestCities, getCountries, type TCity, type TCountr
 import PlayerStatsUI from './src/playerStatsUI.ts'
 import selectStartCountryView from './src/selectStartCountry.ts'
 import drawFlyPlants from './src/drawFlyPlants.ts'
-/* 
-import { MOCK_FLYPLAN } from './src/mocks.ts'
-import awaitTime from './src/awaitTime.ts' 
-*/
+
 import CloudLayer from './src/cloudLayer.ts'
 import SoundManager from './src/soundManager.ts'
 const appElement = document.querySelector<HTMLDivElement>('#app')!
@@ -128,18 +125,6 @@ async function runFlyPlanSelection(country: TCountry, startCity: TCity) {
 
 }
 
-/* async function startMock() {
-  const plan = MOCK_FLYPLAN.cities
-  const startCity = plan[0]
-  mapController.setCenter(startCity.latlng)
-  map.setZoom(13)
-
-  await awaitTime(1000)
-  const { completed, lastCity } = await mapController.startPlan(plan)
-  if (completed) {
-    runFlyPlanSelection(obtainCityOfCountry(lastCity.countryCode)!, lastCity)
-  }
-} */
 async function start() {
   const country = await selectStarCountry()
   const startCity = await getRandomCity(country)
@@ -153,6 +138,7 @@ async function preloadSounds() {
 
 
 }
+
 RequestCountries().then(() => {
   return preloadSounds()
 

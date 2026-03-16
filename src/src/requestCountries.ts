@@ -1,5 +1,4 @@
 const storeKey = 'world-data'
-const geonamesUsername = import.meta.env.VITE_GEONAMES_USERNAME
 export type TCity = {
     name: string,
     latlng: number[]
@@ -19,11 +18,20 @@ const holder: {
     loaded: false,
     countries: [],
 }
+async function requestCitiesJson() {
+    const response = await fetch('./cities.json');
+    const data = await response.json();
+    return data
+}
 export default async function RequestCountries() {
     if (holder.loaded) return holder.countries
     const response = await fetch('./countries.json');
     const data = await response.json();
     holder.countries = data.map((d: any) => ({ ...d, cities: [] }))
+    const cities = await requestCitiesJson()
+    holder.countries = holder.countries.map((country) => {
+        return { ...country, cities: cities[country.code] }
+    })
     holder.loaded = true
     storeHolder()
     return holder.countries
@@ -42,14 +50,7 @@ export async function requestCities(countryCode: string) {
     if (country.cities.length > 0) {
         return country.cities
     }
-    const response = await fetch(`http://api.geonames.org/searchJSON?country=${countryCode}&featureClass=P&maxRows=20&username=${geonamesUsername}`);
-
-    const data = await response.json();
-    country.cities = data.geonames.map((city: any) => {
-        return { name: city.name, countryCode: countryCode, latlng: [Number(city.lat), Number(city.lng)] }
-    })
-    storeHolder()
-    return country.cities
+    return []
 }
 
 function storeHolder() {
