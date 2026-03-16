@@ -1,4 +1,4 @@
-const storeKey = 'world-data'
+
 export type TCity = {
     name: string,
     latlng: number[]
@@ -33,7 +33,6 @@ export default async function RequestCountries() {
         return { ...country, cities: cities[country.code] }
     })
     holder.loaded = true
-    storeHolder()
     return holder.countries
 }
 
@@ -52,15 +51,3 @@ export async function requestCities(countryCode: string) {
     }
     return []
 }
-
-function storeHolder() {
-    localStorage.setItem(storeKey, JSON.stringify({ countries: holder.countries }))
-}
-function restoreHolder() {
-    const data = localStorage.getItem(storeKey)
-    if (!data) return
-    const restored: any = JSON.parse(data)
-    holder.countries = restored.countries
-    holder.loaded = true
-}
-restoreHolder()
