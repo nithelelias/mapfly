@@ -28,9 +28,11 @@ export default async function RequestCountries() {
     const response = await fetch('./countries.json');
     const data = await response.json();
     holder.countries = data.map((d: any) => ({ ...d, cities: [] }))
-    const cities = await requestCitiesJson()
+    const jsonCities = await requestCitiesJson()
     holder.countries = holder.countries.map((country) => {
-        return { ...country, cities: cities[country.code] }
+        const cities = jsonCities[country.code]
+
+        return { ...country, cities }
     })
     holder.loaded = true
     return holder.countries
@@ -39,15 +41,5 @@ export default async function RequestCountries() {
 export function getCountries() {
     return holder.countries
 }
-function getCountryByCode(code: string) {
-    return holder.countries.find((country) => country.code === code)
-}
 
-export async function requestCities(countryCode: string) {
-    const country = getCountryByCode(countryCode)
-    if (!country) return []
-    if (country.cities.length > 0) {
-        return country.cities
-    }
-    return []
-}
+

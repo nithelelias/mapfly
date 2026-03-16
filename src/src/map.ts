@@ -24,6 +24,7 @@ import awaitTime from './awaitTime';
 import ConfirmMessage from './confirmMessage';
 import SoundManager from './soundManager';
 import HelpInfoWindow from './helpInfoWindow';
+import random from './random';
 
 const minZoom = 2
 const maxZoom = 20
@@ -153,13 +154,17 @@ export function MapController(element: HTMLElement, map: L.Map) {
   const updateSounds = () => {
     const sfx = SoundManager.getCurrent();
     if (airplaneCtrl.currentSpeed > 0) {
-      if (!sfx.isPlaying('sfx-airplane')) {
-        sfx.play('sfx-airplane', { loop: true });
-        sfx.fadeIn('sfx-airplane', 1, 3);
+      if (!sfx.isPlaying('sfx-airplane') && !sfx.isPlaying('sfx-airplane2')) {
+        const sound = random(0, 1) == 0 ? 'sfx-airplane' : 'sfx-airplane2';
+        sfx.play(sound, { rate: random(8, 14) / 10 });
+        sfx.fadeIn(sound, 1, 3);
       }
     } else {
       if (sfx.isPlaying('sfx-airplane')) {
         sfx.fadeOut('sfx-airplane', 1, true);
+      }
+      if (sfx.isPlaying('sfx-airplane2')) {
+        sfx.fadeOut('sfx-airplane2', 1, true);
       }
     }
   }

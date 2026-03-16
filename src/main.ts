@@ -1,6 +1,6 @@
 import './style.css'
 import { createMap, MapController } from './src/map.ts'
-import RequestCountries, { requestCities, getCountries, type TCity, type TCountry } from './src/requestCountries.ts'
+import RequestCountries, { getCountries, type TCity, type TCountry } from './src/requestCountries.ts'
 
 import PlayerStatsUI from './src/playerStatsUI.ts'
 import selectStartCountryView from './src/selectStartCountry.ts'
@@ -8,6 +8,7 @@ import drawFlyPlants from './src/drawFlyPlants.ts'
 
 import CloudLayer from './src/cloudLayer.ts'
 import SoundManager from './src/soundManager.ts'
+import random from './src/random.ts'
 const appElement = document.querySelector<HTMLDivElement>('#app')!
 appElement.innerHTML = `
 <div id="map"></div>
@@ -32,15 +33,11 @@ setInterval(() => {
   clouds.getContainer().style.opacity = (random(1, 10) / 10).toString()
 }, 5000)
 
-function random(min: number, max: number) {
-  return Math.floor(Math.random() * max) + min
-}
-function rndItem<T>(t: T[]) { return t.sort(() => Math.random() - 0.5).slice(0, 1)[0] };
+
+function rndItem<T>(arr: T[]) { return [...arr].sort(() => Math.random() - 0.5).slice(0, 1)[0] };
 
 const getRandomCity = async (country: TCountry) => {
-
-  const cities = await requestCities(country.code);
-  return rndItem(cities);
+  return rndItem(country.cities);
 }
 async function getFlyPlan(startCity: TCity, countries: TCountry[], totalCitiesToVisit: number) {
 
@@ -55,7 +52,7 @@ async function getFlyPlan(startCity: TCity, countries: TCountry[], totalCitiesTo
   while (remainCitiesToVisit > 0) {
     const country = rndItem(countries);
     if (!memoryCities[country.code]) {
-      memoryCities[country.code] = await requestCities(country.code);
+      memoryCities[country.code] = country.cities
     }
     const rndIdx = random(0, memoryCities[country.code].length - 1)
     const city = memoryCities[country.code].splice(rndIdx, 1)[0]
@@ -76,7 +73,6 @@ async function getSureFlyPlan(startCity: TCity, countries: TCountry[], totalCiti
   while (true) {
     const plan = await getFlyPlan(startCity, countries, totalCitiesToVisit)
     if (plan.length > 1) {
-      console.log(plan)
       return plan
     }
   }
@@ -134,7 +130,8 @@ async function start() {
 }
 async function preloadSounds() {
   await sfx.load('sfx-chime', '/sfx-airplane-chime.mp3');
-  await sfx.load('sfx-airplane', '/sfx-airplane-sound2.mp3');
+  await sfx.load('sfx-airplane', '/sfx-airplane-sound.mp3');
+  await sfx.load('sfx-airplane2', '/sfx-airplane-sound2.mp3');
 
 
 }

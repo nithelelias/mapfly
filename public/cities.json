@@ -5443,24 +5443,6 @@
             ]
         }
     ],
-    "TF": [
-        {
-            "name": "Port-aux-Français",
-            "countryCode": "TF",
-            "latlng": [
-                -49.34916,
-                70.21937
-            ]
-        },
-        {
-            "name": "Martin-de-Viviès",
-            "countryCode": "TF",
-            "latlng": [
-                -37.79703,
-                77.5648
-            ]
-        }
-    ],
     "TC": [
         {
             "name": "Cockburn Town",
@@ -21113,7 +21095,6 @@
             ]
         }
     ],
-    "HM": [],
     "SZ": [
         {
             "name": "Mbabane",
@@ -22086,7 +22067,6 @@
             ]
         }
     ],
-    "BV": [],
     "CH": [
         {
             "name": "Lucerne",

@@ -279,15 +279,6 @@
         "code": "PE"
     },
     {
-        "name": "Heard Island and McDonald Islands",
-        "latlng": [
-            -53.0818,
-            73.5042
-        ],
-        "region": "Antarctic",
-        "code": "HM"
-    },
-    {
         "name": "Antarctica",
         "latlng": [
             -90,
@@ -304,23 +295,5 @@
         ],
         "region": "Antarctic",
         "code": "GS"
-    },
-    {
-        "name": "Bouvet Island",
-        "latlng": [
-            -54.4208,
-            3.3464
-        ],
-        "region": "Antarctic",
-        "code": "BV"
-    },
-    {
-        "name": "French Southern and Antarctic Lands",
-        "latlng": [
-            -49.25,
-            69.167
-        ],
-        "region": "Antarctic",
-        "code": "TF"
     }
 ]

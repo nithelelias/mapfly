@@ -491,9 +491,12 @@ body {
 .ui-select-start-country-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: .2rem;
+    width: 100%;
+    overflow: auto;
+    height: 500px;
 
     button {
         width: 100%;
