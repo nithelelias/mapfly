@@ -16,6 +16,7 @@ appElement.innerHTML = `
 `
 const mapElement = appElement.querySelector("#map")! as HTMLElement
 new PlayerStatsUI(appElement)
+const sfx = new SoundManager(0.8); // master en 0.8
 const map = createMap(mapElement, [0, random(-100, 100)])
 const mapController = MapController(mapElement, map)
 const clouds = new CloudLayer('#clouds', {
@@ -24,10 +25,6 @@ const clouds = new CloudLayer('#clouds', {
   count: random(1, 100),        // cantidad de nubes
   opacity: 1,   // opacidad global 0-1
 });
-const sfx = new SoundManager(0.8); // master en 0.8
-
-
-
 clouds.start();
 setInterval(() => {
   clouds.getContainer().style.opacity = (random(1, 10) / 10).toString()
@@ -141,4 +138,9 @@ RequestCountries().then(() => {
 
 }).then(() => {
   start()
-}) 
+})
+
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault()
+})

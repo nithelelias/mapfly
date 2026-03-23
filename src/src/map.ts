@@ -25,6 +25,8 @@ import ConfirmMessage from './confirmMessage';
 import SoundManager from './soundManager';
 import HelpInfoWindow from './helpInfoWindow';
 import random from './random';
+import mobileController from './mobileControllers';
+import isMobile from './isMobile';
 
 const minZoom = 2
 const maxZoom = 20
@@ -58,9 +60,20 @@ export function MapController(element: HTMLElement, map: L.Map) {
   const cityModal = new CityArrivalModal(element)
 
   const airplaneCtrl = new AirplaneController()
-  const accelerator = listenAccelerator()
 
+  const accelerator = listenAccelerator()
   const moveCursor = ListeningToKeyMoves(() => { })
+
+  const mobileCtrl = new mobileController()
+  mobileCtrl.setAirplaneImage(airplane.airplaneImg)
+  mobileCtrl.onMove((x, y) => {
+    moveCursor.cursor = { x, y }
+  })
+  mobileCtrl.onTouching((dragging) => {
+
+    accelerator.pressed = moveCursor.cursor.y < 0 && dragging
+  })
+  mobileCtrl.hide()
 
   routeLine.onMilestone(() => {
     GameState.fuel -= GameState.stats.consumptionPerKm;
@@ -182,6 +195,7 @@ export function MapController(element: HTMLElement, map: L.Map) {
     airplaneCtrl.updatePosition(center)
 
     airplane.update(center as L.LatLngExpression, airplaneCtrl.angle)
+
     updateMap()
     velocimeter.update(airplaneCtrl.currentSpeed)
     flyPlan.update(center)
@@ -199,14 +213,18 @@ export function MapController(element: HTMLElement, map: L.Map) {
     },
     startPlan: (cities: TCity[]) => {
       PlanRewards.setPlanReward(cities)
+
       return new Promise<{ completed: boolean, lastCity: TCity }>((resolve) => {
         flyPlan.setCities(cities)
         paused = false
+
         setTimeout(() => {
           waiting = false
-          map.setZoom(13)
+          map.setZoom(isMobile() ? 10 : 13);
+          mobileCtrl.show()
         }, 1000)
         onFlyPlanComplete = (props: { completed: boolean, lastCity: TCity }) => {
+          mobileCtrl.hide()
           resolve(props);
         }
       })

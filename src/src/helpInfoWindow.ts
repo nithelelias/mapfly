@@ -1,9 +1,29 @@
 export default class HelpInfoWindow {
+    container: HTMLElement
     constructor(element: HTMLElement) {
 
-        const container = document.createElement("div")
-        container.className = "ui-help-info-window"
-        container.innerHTML = `
+        this.container = document.createElement("div")
+        this.container.className = "ui-help-info-window"
+        element.appendChild(this.container)
+
+        this.updateHelpByDevice()
+        window.addEventListener("resize", () => {
+            this.updateHelpByDevice()
+        })
+    }
+    updateHelpByDevice() {
+        if (window.innerWidth < 1024) {
+            this.mobileHelp()
+        } else {
+            this.desktopHelp()
+        }
+    }
+    mobileHelp() {
+        this.container.innerHTML = `  
+        `
+    }
+    desktopHelp() {
+        this.container.innerHTML = `
         <div class="ui-help-info-window-content">
              <span>Q = zoomIn</span> |
              <span>E = zoomOut</span> |
@@ -14,6 +34,5 @@ export default class HelpInfoWindow {
              <span>D = right</span> 
         </div>
         `
-        element.appendChild(container)
     }
 }

@@ -7,12 +7,15 @@ export default class Airplane {
     defaultAngle: number = 90
     currentAngle: number = -1
     markerElement: HTMLElement;
+    airplaneImg: string;
 
     constructor(center: L.LatLngExpression, map: L.Map) {
+
         const airplaneIcon = L.icon({
             iconUrl: imgAirplane1,
 
         })
+        this.airplaneImg = imgAirplane1
         this.marker = L.marker(center, { icon: airplaneIcon });
         this.marker.addTo(map);
 
@@ -27,7 +30,7 @@ export default class Airplane {
     }
     private updateSprite() {
         if (!this.dirty) return
-        this.markerElement.style.transform += ` rotate(${this.currentAngle + this.defaultAngle}deg)`;
+        this.markerElement.style.transform += ` rotate(${this.currentAngle + this.defaultAngle}deg) `;
     }
     update(center: L.LatLngExpression, angle: number) {
         this.marker.setLatLng(center);

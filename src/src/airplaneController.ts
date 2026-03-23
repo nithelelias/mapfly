@@ -8,7 +8,7 @@ export default class AirplaneController {
     // Fixed physics constants
     private accelerationFriction = 0.9998;
     private angularVelocityFriction = 0.998;
-    private angularSpeed = 0.10;
+    private angularSpeed = 0.30;
 
 
 

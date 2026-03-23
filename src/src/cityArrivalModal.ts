@@ -47,6 +47,7 @@ export default class CityArrivalModal {
                     <div style="background: var(--ui-bg-secondary); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
                         <p style="margin: 0 0 10px 0;">Fondos disponibles: <strong class="text-success" id="shop-money-available"></strong></p>
                         <p style="margin: 0 0 10px 0;">Combustible actual: <strong class="text-info" id="shop-current-fuel"></strong>L</p>
+                        <p style="margin: 0 0 10px 0;">Combustible requerido: <strong class="text-info" id="shop-required-fuel"></strong>L</p>
                         <p style="margin: 0; font-size: 0.9em; color: var(--ui-text-muted);">Precio: $${EconomySystem.fuelPricePerLiter} / Litro</p>
                     </div>
                     
@@ -100,6 +101,9 @@ export default class CityArrivalModal {
 
         // Depart
         btnDepart.addEventListener('click', () => {
+            if (!this.validateIfFuelIsEnough()) {
+                return
+            }
             if (this.onDepartCallback) {
                 this.onDepartCallback();
             }
@@ -118,11 +122,8 @@ export default class CityArrivalModal {
             if (GameState.money >= cost) {
                 GameState.money -= cost;
                 GameState.fuel += amount;
-                const unbind = NotificationsManager.notify("Compra exitosa", `Compraste ${amount}L`);
                 this.updateShopUI();
-                setTimeout(() => {
-                    unbind();
-                }, 2000);
+
             } else {
                 const unbind = NotificationsManager.notify("Fondos insuficientes", `Necesitas $${cost} para comprar ${amount}L`);
                 setTimeout(() => {
@@ -133,6 +134,15 @@ export default class CityArrivalModal {
 
     }
 
+    private validateIfFuelIsEnough() {
+        const hasMoneyToBuyFuel = GameState.money >= EconomySystem.fuelPricePerLiter * this.nextCityFuelRequired
+        if (GameState.fuel < this.nextCityFuelRequired && hasMoneyToBuyFuel) {
+            NotificationsManager.notify("Combustible insuficiente", `Necesitas ${this.nextCityFuelRequired}L para llegar a la próxima ciudad`, "error")
+            return false
+        }
+        return true
+    }
+
     private updateMainUI() {
         const fuelAmountSpan = this.container.querySelector('#modal-fuel-amount') as HTMLElement;
         const fuelAmountContainer = this.container.querySelector('#modal-fuel-amount-container') as HTMLElement;
@@ -140,7 +150,7 @@ export default class CityArrivalModal {
         fuelAmountSpan.innerText = Math.floor(this.nextCityFuelRequired).toLocaleString();
         const currentFuel = GameState.fuel
         if (currentFuel < this.nextCityFuelRequired) {
-            NotificationsManager.notify("Combustible insuficiente", `Necesitas ${this.nextCityFuelRequired}L para llegar a la próxima ciudad`, "error")
+            //NotificationsManager.notify("Combustible insuficiente", `Necesitas ${this.nextCityFuelRequired}L para llegar a la próxima ciudad`, "error")
 
             fuelAmountContainer.classList.add('text-danger')
         } else {
@@ -151,8 +161,10 @@ export default class CityArrivalModal {
     private updateShopUI() {
         const moneyAvailable = this.container.querySelector('#shop-money-available') as HTMLElement;
         const currentFuel = this.container.querySelector('#shop-current-fuel') as HTMLElement;
+        const requiredFuel = this.container.querySelector('#shop-required-fuel') as HTMLElement;
         const fuelrange = this.container.querySelector('#fuelrange') as HTMLInputElement;
         const maxPosibleFuel = GameState.money / EconomySystem.fuelPricePerLiter;
+        requiredFuel.innerText = Math.floor(this.nextCityFuelRequired).toLocaleString();
         fuelrange.max = maxPosibleFuel.toString();
         moneyAvailable.innerText = formatMoney(GameState.money)
         currentFuel.innerText = Math.floor(GameState.fuel).toLocaleString();
