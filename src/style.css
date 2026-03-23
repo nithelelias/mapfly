@@ -130,7 +130,7 @@ body {
     padding: 12px 24px;
     border-radius: 30px;
     font-family: var(--ui-font);
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -141,6 +141,7 @@ body {
 
 
     @media (min-width:400px) {
+        font-size: 18px;
         width: fit-content;
     }
 }
