@@ -140,7 +140,7 @@ body {
     width: 80vw;
 
 
-    @media (min-width:400px) {
+    @media (min-width:800px) {
         font-size: 18px;
         width: fit-content;
     }
